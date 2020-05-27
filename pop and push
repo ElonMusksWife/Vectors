@@ -1,0 +1,18 @@
+#include <iostream>
+#include <vector>
+
+int main() {
+  
+  std::vector<std::string> grocery = {"Hot Pepper Jam", "Dragon Fruit", "Brussel Sprouts"};
+    
+    // <std::vector> not only stores the elements; it also stores the size of the vector:
+  // Add more 
+  //push_back() adding elements
+  grocery.push_back("Juise");
+  grocery.push_back("Juise"); 
+  grocery.push_back("Juise");
+  //pop_back() removing elements from the end
+  grocery.pop_back();
+  std::cout << grocery.size() <<"\n";
+
+}
