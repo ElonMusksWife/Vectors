@@ -1,0 +1,29 @@
+#include <iostream>
+#include <vector>
+#include <string>
+
+int main(){
+  std::string word;
+  std::cin >> word;
+  std::vector<char> vowels = {'a','e','i','o','u'};
+  std::vector<char> result;
+  // int b = 0;
+  for(int i = 0; i < word.length(); i++){
+    // b++;
+    for(int k = 0; k < vowels.size(); k++)
+    {
+        if(word[i] == vowels[k]){
+          result.push_back(word[i]);
+        }
+    }
+    if(word[i]=='e' || word[i]=='u'){
+      result.push_back(word[i]);
+    }
+
+  }
+
+  for(int i = 0; i < result.size(); i++){
+    std::cout<<result[i];
+  }
+  // std::cout<<b;
+}
