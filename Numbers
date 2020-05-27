@@ -1,0 +1,18 @@
+/*This program takes one vector and sums all even and product of odd elements in the vector*/
+#include <iostream>
+#include <vector>
+int main(){
+  std::vector<int> numbers = {2, 4, 3, 6, 1, 9};
+  int even = 0, odd = 1;
+  //add only even numbers
+  for(int i=0; i < numbers.size(); i++){
+    if(numbers[i] % 2 == 0){
+      even += numbers[i];
+    }
+    if(numbers[i] % 2 == 1){
+      odd *= numbers[i];
+    }
+  }
+  std::cout<<"Sum of even numbers is "<<even<<std::endl;
+  std::cout<<"Product of odd numbers is "<<odd;
+}
